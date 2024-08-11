@@ -1,27 +1,31 @@
 
 $(document).ready(function () {
+    $(document).on('click', '.Download', function () {
+		$('.download-pr h4').fadeOut();
+	});
 // Progress Bar
 	$(".Download").eq(0).ElasticProgress({
 		buttonSize: 60,
 		colorBg: "#4bb0fe",
 		colorFg: "#4bb0fe",
 		highlightColor: "#fff",
-		width: Math.min($(window).width()/2 - 250, 450),
+        // width: 450,
+		width: Math.min($(window).width()/2 - 0, 450),
 
 		onClick: function (event) {
 			$("#head polygon").attr("class", "");
 			$("#line rect").attr("class", "");
 			$("#label text").attr("class", "fill_white");
 
-			console.log("onClick");
+			// console.log("onClick");
 			$(this).ElasticProgress("open");
 		},
 		onOpen: function (event) {
-			console.log("onOpen");
+			// console.log("onOpen");
 			fakeLoading($(this));
 		},
 		onComplete: function (event) {
-			console.log("onComplete");
+			// console.log("onComplete");
 		},
 		onClose: function (event) {
 			console.log("onClose");
@@ -35,7 +39,6 @@ $(document).ready(function () {
 			$(this).ElasticProgress("open");
 		}
 	});
-
 	setTimeout(function () {
 		$("#head polygon").attr("class", "fill_white");
 		$("#line rect").attr("class", "fill_white");

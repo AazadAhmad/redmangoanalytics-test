@@ -24,9 +24,7 @@ $(document).ready(function () {
 	$(document).on('click', '.close-btn', function () {
 		$('.profile-detials').fadeOut();
 	});
-	$(document).on('click', '.Download', function () {
-		$('.download-pr h4').fadeOut();
-	});
+	
 
 	$(document).on('click', '.submit', function () {
 		$(this).hide();

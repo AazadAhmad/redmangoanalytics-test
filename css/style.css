@@ -271,7 +271,6 @@ button.close-btn {
     0% {
         -webkit-transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(360deg);
     }
@@ -281,13 +280,12 @@ button.close-btn {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
-
 /* Assignment 4 End*/
+
 
 /* Assignment 5 Start*/
 .download-sec {
@@ -300,7 +298,12 @@ button.close-btn {
     align-items: center;
     text-align: center;
 }
-
+.download-pr {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .fill_white {
     fill: #fff !important;
     font-weight: 500;
@@ -309,7 +312,6 @@ button.close-btn {
 #border path {
     stroke-width: 10px;
 }
-
 
 .download-pr h4 {
     font-size: 18px;
@@ -476,6 +478,11 @@ nav {
     }
 }
 
+/* @media (max-width: 768px) {
+    .download-pr svg{
+        margin: -80px -50px !important;
+    }
+} */
 @media (max-width: 767px) {
     .opendialog .btn-close {
         right: 25px;
