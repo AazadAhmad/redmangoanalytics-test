@@ -86,8 +86,9 @@ section {
     border: 1px transparent solid;
     color: #4bb0fe;
 }
+
 .btn:focus,
-.btn:visited{
+.btn:visited {
     box-shadow: none;
     outline: none;
     color: #fff;
@@ -309,9 +310,6 @@ button.close-btn {
     stroke-width: 10px;
 }
 
-/* .Download svg {
-    margin: -85px 0 !important;
-} */
 
 .download-pr h4 {
     font-size: 18px;
@@ -479,9 +477,10 @@ nav {
 }
 
 @media (max-width: 767px) {
-    .opendialog .btn-close{
+    .opendialog .btn-close {
         right: 25px;
     }
+
     nav {
         display: block;
         background: #000000;
